@@ -47,6 +47,13 @@ class DataTrainingController extends Controller
             'axillary' => $request->axillary,
             'survival_status' => $request->survival_status,
         ]);
-        return redirect('data_training');
+        return redirect('/data_training');
+    }
+
+    public function destroy($id)
+    {
+        $delete = DataT::find($id);
+        $delete->delete();
+        return redirect('/data_training');
     }
 }
