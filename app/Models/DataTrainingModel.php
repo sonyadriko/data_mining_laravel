@@ -15,4 +15,5 @@ class DataTrainingModel extends Model
         'survival_status'
     ];
     protected $primaryKey = 'id_datatraining';
+    public $timestamps = false;
 }
