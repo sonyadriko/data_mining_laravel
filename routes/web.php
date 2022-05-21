@@ -29,6 +29,7 @@ Route::get('/data_training/create', '\App\Http\Controllers\DataTrainingControlle
 Route::post('/data_training/create', '\App\Http\Controllers\DataTrainingController@store');
 Route::get('/data_training/edit/{id}', '\App\Http\Controllers\DataTrainingController@edit');
 Route::post('data_training/update/{id}','\App\Http\Controllers\DataTrainingController@update'); //UPDATE DATA (POST/PUT)
+Route::get('/data_training/delete/{id}','\App\Http\Controllers\DataTrainingController@destroy'); //DELETE DATA
 
 
 Route::get('/atribut', '\App\Http\Controllers\AtributController@index');

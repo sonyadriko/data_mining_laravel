@@ -63,24 +63,24 @@
                                 <div class="col-xl-4 col-lg-12 col-md-9">
                                     <div class="col-lg-12">
                                         <div class="p-5">
-                                            <form method="POST" action="{{ url('/data_training/edit'.$datat->id_datatraining.'') }}">
+                                            <form method="POST" action="{{ url('/data_training/update/'.$datat->id_datatraining.'') }}">
                                                 @csrf
                                                 <table border="0" cellpadding="10" cellspacing="0">
                                                     <tr>
                                                         <td>Age : </td>
-                                                        <td><input type="number" name="inputage" class="form-control form-control-user" id="exampleAge" value="{{ $datat->age }}" style="-moz-appearance: textfield; " required></td>
+                                                        <td><input type="number" name="age" class="form-control form-control-user" id="exampleAge" value="{{ $datat->age }}" style="-moz-appearance: textfield; " required></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Year : </td>
-                                                        <td><input type="number" name="inputyear" class="form-control form-control-user" id="exampleYear" value="{{$datat->year}}" style="-moz-appearance: textfield;" required></td>
+                                                        <td><input type="number" name="year" class="form-control form-control-user" id="exampleYear" value="{{$datat->year}}" style="-moz-appearance: textfield;" required></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Axillary : </td>
-                                                        <td><input type="number" name="inputaxillary" class="form-control form-control-user" id="exampleAxillary" value="{{$datat->axillary}}" style="-moz-appearance: textfield; " required></td>
+                                                        <td><input type="number" name="axillary" class="form-control form-control-user" id="exampleAxillary" value="{{$datat->axillary}}" style="-moz-appearance: textfield; " required></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Survival Status : </td> 
-                                                        <td><input type="number" name="inputsurv" class="form-control form-control-user" id="exampleK" value="{{$datat->survival_status}}" style="-moz-appearance: textfield; " required></td>
+                                                        <td><input type="number" name="survival_status" class="form-control form-control-user" id="exampleK" value="{{$datat->survival_status}}" style="-moz-appearance: textfield; " required></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="{{ url('data_training') }}" style="text-decoration: none; list-style: none;"><input type="button" class="btn btn-primary btn-user btn-block" name="back" value="Back"></a></td>

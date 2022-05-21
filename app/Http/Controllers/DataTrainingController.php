@@ -47,6 +47,6 @@ class DataTrainingController extends Controller
             'axillary' => $request->axillary,
             'survival_status' => $request->survival_status,
         ]);
-        return redirect('/data_training');
+        return redirect('data_training');
     }
 }
