@@ -87,7 +87,7 @@
                                             <td>{{ $datatra->axillary }}</td>
                                             <td>{{ $datatra->survival_status }}</td>
                                             <td>
-                                                <a href='' style="text-decoration: none; list-style: none;"><input type='submit' value='Edit' id='editbtn' class="btn btn-primary btn-user" ></a>
+                                                <a href="{{ url('/data_training/edit/'.$datatra->id_datatraining.'') }}" style="text-decoration: none; list-style: none;"><input type='submit' value='Edit' id='editbtn' class="btn btn-primary btn-user" ></a>
                                                 <a href='' style="text-decoration: none; list-style: none;"><input type='submit' value='Delete' id='delbtn' class="btn btn-primary btn-user" ></a>
                                             </td>
                                          

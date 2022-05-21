@@ -27,6 +27,8 @@ Route::get('/dashboard', '\App\Http\Controllers\DashboardController@index');
 Route::get('/data_training', '\App\Http\Controllers\DataTrainingController@index');
 Route::get('/data_training/create', '\App\Http\Controllers\DataTrainingController@create');
 Route::post('/data_training/create', '\App\Http\Controllers\DataTrainingController@store');
+Route::get('/data_training/edit/{id}', '\App\Http\Controllers\DataTrainingController@edit');
+Route::post('data_training/update/{id}','\App\Http\Controllers\DataTrainingController@update'); //UPDATE DATA (POST/PUT)
 
 
 Route::get('/atribut', '\App\Http\Controllers\AtributController@index');
